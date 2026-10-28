@@ -204,11 +204,11 @@ input:focus,select:focus,textarea:focus{box-shadow:inset 0 0 0 .2mm #4779d0}
  }
 }
 @media print{
- @page{size:107mm 70mm;margin:0}
- html,body{width:107mm;height:70mm;margin:0;background:#fff}
+ @page{margin:0}
+ html,body{width:100%;min-height:100%;margin:0;background:#fff}
  .web-header,.toolbar,.help{display:none!important}
  .stage{padding:0;margin:0;display:block}
- .paper{width:107mm;height:70mm;border:.5mm solid #202020;box-shadow:none;margin:0}
+ .paper{width:107mm;height:70mm;border:.5mm solid #202020;box-shadow:none;margin:0;transform:none}
  input,select,textarea{-webkit-appearance:none;appearance:none;background:transparent!important;border:0!important;border-bottom:.2mm solid #222!important;box-shadow:none!important;border-radius:0!important;color:#000!important;font-weight:700;text-align:center;text-transform:uppercase;print-color-adjust:economy;-webkit-print-color-adjust:economy}
 input::placeholder,textarea::placeholder{color:transparent!important}
 .name1::before,.name1::after{border-top-color:#222}
